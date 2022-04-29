@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7DD-HC-9Fs">
+                                <rect key="frame" x="142" y="564.33333333333337" width="145" height="39.666666666666629"/>
+                                <color key="tintColor" red="0.29842725399999998" green="0.45987707379999998" blue="0.64017701149999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Войти">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="ChalkboardSE-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vk-vkontakte-logo-icon copy" translatesAutoresizingMaskIntoConstraints="NO" id="yqJ-bf-snL">
+                                <rect key="frame" x="154" y="180" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Jly-pS-dZb"/>
+                                    <constraint firstAttribute="height" constant="120" id="Tlb-2j-0qx"/>
+                                    <constraint firstAttribute="width" secondItem="yqJ-bf-snL" secondAttribute="height" multiplier="1:1" id="tBS-NT-DoX"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pzm-F4-JSM">
+                                <rect key="frame" x="114" y="399" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paw-1J-2dL">
+                                <rect key="frame" x="114" y="480" width="201" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Логин" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dE1-Fr-Hk3">
+                                <rect key="frame" x="190" y="370" width="49" height="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVE-7C-xPe">
+                                <rect key="frame" x="185" y="451" width="59" height="21"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.29842725399999998" green="0.45987707379999998" blue="0.64017701149999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="paw-1J-2dL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="114" id="077-RV-J2J"/>
+                            <constraint firstItem="paw-1J-2dL" firstAttribute="top" secondItem="vVE-7C-xPe" secondAttribute="bottom" constant="8" id="9pL-NF-I6B"/>
+                            <constraint firstItem="yqJ-bf-snL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="GWF-h3-eAe"/>
+                            <constraint firstItem="paw-1J-2dL" firstAttribute="leading" secondItem="pzm-F4-JSM" secondAttribute="leading" id="II5-47-UQ6"/>
+                            <constraint firstItem="paw-1J-2dL" firstAttribute="centerX" secondItem="vVE-7C-xPe" secondAttribute="centerX" id="RfD-Ve-5VK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yqJ-bf-snL" secondAttribute="trailing" constant="154" id="Ubg-ew-sOu"/>
+                            <constraint firstItem="7DD-HC-9Fs" firstAttribute="top" secondItem="paw-1J-2dL" secondAttribute="bottom" constant="50.333333333333371" id="XJF-98-4UA"/>
+                            <constraint firstItem="7DD-HC-9Fs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="142" id="cdR-og-cbg"/>
+                            <constraint firstItem="paw-1J-2dL" firstAttribute="centerX" secondItem="7DD-HC-9Fs" secondAttribute="centerX" id="gGp-yM-YHK"/>
+                            <constraint firstItem="paw-1J-2dL" firstAttribute="trailing" secondItem="pzm-F4-JSM" secondAttribute="trailing" id="irr-ZX-bbp"/>
+                            <constraint firstItem="paw-1J-2dL" firstAttribute="centerX" secondItem="dE1-Fr-Hk3" secondAttribute="centerX" id="mQi-KC-CyZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7DD-HC-9Fs" secondAttribute="trailing" constant="141" id="o5N-tT-jIX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7DD-HC-9Fs" secondAttribute="bottom" constant="288" id="sHL-3z-qjV"/>
+                            <constraint firstItem="yqJ-bf-snL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="136" id="x30-YB-JbN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5.6074766355140184" y="53.131749460043203"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="vk-vkontakte-logo-icon copy" width="1024" height="1024"/>
+    </resources>
+</document>
