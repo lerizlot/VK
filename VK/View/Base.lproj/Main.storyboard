@@ -46,6 +46,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                             <color key="baseForegroundColor" red="0.92459700339999995" green="0.96173526610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zbd-29-lWb"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1R2-yC-FIU">
                                         <rect key="frame" x="169.66666666666666" y="451" width="88.999999999999972" height="24"/>
@@ -85,6 +88,14 @@
                             <constraint firstItem="p7e-hh-hBB" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ioW-UR-I1T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginLabel" destination="X6v-ak-0Mi" id="hak-eN-62D"/>
+                        <outlet property="loginTextField" destination="R3S-DR-XoS" id="2kv-zi-BcM"/>
+                        <outlet property="logoImage" destination="mO1-nu-0A3" id="QX5-uF-UBd"/>
+                        <outlet property="passwordLabel" destination="1R2-yC-FIU" id="C1y-y6-gfg"/>
+                        <outlet property="passwordTextField" destination="J5N-LE-Ue6" id="jiS-gd-lxY"/>
+                        <outlet property="scrollView" destination="p7e-hh-hBB" id="n3C-q7-cyX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
