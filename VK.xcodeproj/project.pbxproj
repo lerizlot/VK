@@ -56,39 +56,31 @@
 		573B6AB72819B0C6007F149C /* VK */ = {
 			isa = PBXGroup;
 			children = (
-				578B687728211D48001E8048 /* Model */,
-				578B687828211D57001E8048 /* View */,
-				578B687928211D5E001E8048 /* Controller */,
+				57CCAB9428223545000DA12A /* Resourses */,
+				573B6ABC2819B0C6007F149C /* LoginViewController.swift */,
+				573B6AC32819B0C8007F149C /* LaunchScreen.storyboard */,
+				573B6ABE2819B0C6007F149C /* Main.storyboard */,
+				57CCAB9528223553000DA12A /* Configuration */,
 				573B6AC12819B0C8007F149C /* Assets.xcassets */,
 				573B6AC62819B0C8007F149C /* Info.plist */,
 			);
 			path = VK;
 			sourceTree = "<group>";
 		};
-		578B687728211D48001E8048 /* Model */ = {
+		57CCAB9428223545000DA12A /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		57CCAB9528223553000DA12A /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
 				573B6AB82819B0C6007F149C /* AppDelegate.swift */,
 				573B6ABA2819B0C6007F149C /* SceneDelegate.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		578B687828211D57001E8048 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				573B6AC32819B0C8007F149C /* LaunchScreen.storyboard */,
-				573B6ABE2819B0C6007F149C /* Main.storyboard */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		578B687928211D5E001E8048 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				573B6ABC2819B0C6007F149C /* LoginViewController.swift */,
-			);
-			path = Controller;
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
