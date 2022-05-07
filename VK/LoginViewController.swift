@@ -65,6 +65,41 @@ class LoginViewController: UIViewController {
         self.scrollView?.endEditing(true)
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        // проверяем данные
+        let checkResult = checkUserData()
+        
+        // если данные не верны, покажет ошибку
+        if !checkResult {
+            showLoginError ()
+        }
+        // вернем результат
+        return checkResult
+    }
+    
+    func checkUserData() -> Bool {
+        guard let login = emailTextField.text,
+              let password = passwordTextField.text else { return false }
+        
+        if login == "" && password == "" {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    // показ сообщения о неправильно введенных данных
+    func showLoginError() {
+        // создаем контроллер
+        let alert = UIAlertController(title: "Error", message: "Entered wrong data", preferredStyle: .alert)
+        // создаем кнопку для UIAlertController
+        let action = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+        // добавляем кнопку на UIAlertController
+        alert.addAction(action)
+        // показываем UIAlertController
+        present(alert, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
