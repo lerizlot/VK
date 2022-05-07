@@ -32,6 +32,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Sign In With Apple">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle2"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="appleSignInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fsl-LQ-uJz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AhQ-eM-tKw">
                                         <rect key="frame" x="64" y="757" width="300" height="31"/>
@@ -40,6 +43,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Sign Up">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="signUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TUb-Pd-fle"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSf-O7-V59">
                                         <rect key="frame" x="64" y="458" width="300" height="34"/>
@@ -52,6 +58,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Log In">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VwI-Xa-IAh"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email or phone number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SN7-p5-WBb">
                                         <rect key="frame" x="64" y="416" width="300" height="34"/>
@@ -114,8 +123,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailTextField" destination="SN7-p5-WBb" id="neO-pF-Llg"/>
                         <outlet property="logoImage" destination="mO1-nu-0A3" id="QX5-uF-UBd"/>
+                        <outlet property="orLabel" destination="A7u-eS-WMk" id="zV7-qK-ENZ"/>
+                        <outlet property="passwordTextField" destination="QSf-O7-V59" id="IKt-fH-zH7"/>
                         <outlet property="scrollView" destination="p7e-hh-hBB" id="n3C-q7-cyX"/>
+                        <outlet property="signInLabel" destination="dUy-Ii-fMD" id="fCU-fV-MNd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
