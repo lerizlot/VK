@@ -55,6 +55,7 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdt-KR-Ldg">
                                         <rect key="frame" x="64" y="514" width="300" height="31"/>
+                                        <color key="tintColor" red="0.33333334329999997" green="0.45490196350000001" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Log In">
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
@@ -78,7 +79,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VKicon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-nu-0A3">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VKlogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-nu-0A3">
                                         <rect key="frame" x="134" y="132" width="160" height="160"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="160" id="x3u-j3-nsw"/>
@@ -413,6 +414,7 @@
     </scenes>
     <resources>
         <image name="VKicon" width="192" height="192"/>
+        <image name="VKlogo" width="1024" height="1024"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person" catalog="system" width="128" height="117"/>
