@@ -59,7 +59,7 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleHeadline"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="logInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VwI-Xa-IAh"/>
+                                            <action selector="logInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xwl-pP-wic"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email or phone number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SN7-p5-WBb">
@@ -68,15 +68,15 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In to VK ID" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUy-Ii-fMD">
-                                        <rect key="frame" x="125.66666666666667" y="356" width="176.66666666666663" height="30"/>
+                                        <rect key="frame" x="125.66666666666669" y="356" width="177" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="4SQ-Lt-B07"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="250" constant="30" id="4SQ-Lt-B07"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VKlogo" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-nu-0A3">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VKlogo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mO1-nu-0A3">
                                         <rect key="frame" x="134" y="132" width="160" height="160"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="160" id="x3u-j3-nsw"/>
@@ -100,13 +100,14 @@
                                     <constraint firstItem="SN7-p5-WBb" firstAttribute="centerX" secondItem="p7e-hh-hBB" secondAttribute="centerX" id="djq-6f-Ggd"/>
                                     <constraint firstItem="mO1-nu-0A3" firstAttribute="leading" secondItem="p7e-hh-hBB" secondAttribute="leading" constant="134" id="eF9-lP-ZRR"/>
                                     <constraint firstItem="hdt-KR-Ldg" firstAttribute="top" secondItem="QSf-O7-V59" secondAttribute="bottom" constant="22" id="eTW-E2-S7B"/>
-                                    <constraint firstItem="mO1-nu-0A3" firstAttribute="top" secondItem="p7e-hh-hBB" secondAttribute="top" constant="132" id="gbf-KD-qA9"/>
+                                    <constraint firstItem="mO1-nu-0A3" firstAttribute="top" secondItem="p7e-hh-hBB" secondAttribute="top" priority="250" constant="132" id="gbf-KD-qA9"/>
                                     <constraint firstItem="mO1-nu-0A3" firstAttribute="centerX" secondItem="p7e-hh-hBB" secondAttribute="centerX" id="leq-nJ-iaV"/>
+                                    <constraint firstAttribute="width" secondItem="p7e-hh-hBB" secondAttribute="height" multiplier="214:463" id="pPi-i7-qdJ"/>
                                     <constraint firstItem="SN7-p5-WBb" firstAttribute="leading" secondItem="p7e-hh-hBB" secondAttribute="leading" constant="64" id="pb4-s4-HwT"/>
                                     <constraint firstItem="AhQ-eM-tKw" firstAttribute="centerX" secondItem="p7e-hh-hBB" secondAttribute="centerX" id="qKm-p3-W6d"/>
                                     <constraint firstAttribute="trailing" secondItem="QSf-O7-V59" secondAttribute="trailing" constant="64" id="vZC-vh-ioD"/>
                                     <constraint firstItem="AhQ-eM-tKw" firstAttribute="top" secondItem="5Mh-dC-nBf" secondAttribute="bottom" constant="86" id="wdH-GN-PmZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="AhQ-eM-tKw" secondAttribute="bottom" constant="138" id="wwP-oK-gIf"/>
+                                    <constraint firstAttribute="bottom" secondItem="AhQ-eM-tKw" secondAttribute="bottom" priority="250" constant="38" id="wwP-oK-gIf"/>
                                     <constraint firstItem="5Mh-dC-nBf" firstAttribute="centerX" secondItem="p7e-hh-hBB" secondAttribute="centerX" id="z4E-Hm-IRB"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="oOx-dA-VAK"/>

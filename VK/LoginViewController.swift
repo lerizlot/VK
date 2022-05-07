@@ -11,13 +11,24 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var logoImage: UIImageView!
-
+    
     @IBOutlet weak var signInLabel: UILabel!
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     
-    @IBAction func logInButton(_ sender: Any) {
+    @IBAction func logInButtonPressed(_ sender: Any) {
+        // Получаем текст логина
+        let login = emailTextField.text!
+        // Получаем текст-пароль
+        let password = passwordTextField.text!
+        
+        // Проверяем, верны ли они
+        if login == "" && password == "" {
+            print("Authorization successfull")
+        } else {
+            print("Error")
+        }
     }
     
     @IBOutlet weak var orLabel: NSLayoutConstraint!
@@ -27,10 +38,57 @@ class LoginViewController: UIViewController {
     @IBAction func signUpButton(_ sender: Any) {
     }
     
+    // Получаем прокрутку
+    // Когда клавиатура появляется
+    @objc func keyboardWasShown(notification: Notification) {
+        
+        // Получаем размер клавиатуры
+        let info = notification.userInfo! as NSDictionary
+        let kbSize = (info.value(forKey: UIResponder.keyboardFrameEndUserInfoKey) as! NSValue).cgRectValue.size
+        let contentInsets = UIEdgeInsets(top: 0.0, left: 0.0, bottom: kbSize.height, right: 0.0)
+        
+        // Добавляем отступ внизу UIScrollView, равный размеру клавиатуры
+        self.scrollView?.contentInset = contentInsets
+        scrollView?.scrollIndicatorInsets = contentInsets
+    }
+    // Когда клавиатура исчезает
+    @objc func keyboardWillBeHidden(notification: Notification) {
+        // Устанавливаем отступ внизу ScrollView, равный 0
+        let contentInsets = UIEdgeInsets.zero
+        scrollView?.contentInset = contentInsets
+    }
+    
+    // Убираем клавиатуру при клике по пустому месту на экране
+    @objc func hideKeyboard() {
+        self.scrollView?.endEditing(true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
+        // Жест нажатия
+        let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(hideKeyboard))
+        // Присваиваем его UIScrollView
+        scrollView?.addGestureRecognizer(hideKeyboardGesture)
+        
+    }
+    
+    // Метод подписки на сообщения из центра уведомлений, которые рассылает клавиатура
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // Подписываемся на два уведомления: одно приходит при появлении клавиатуры
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWasShown), name: UIResponder.keyboardWillShowNotification, object: nil)
+        //Второе - когда она пропадет
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillBeHidden(notification:)), name: UIResponder.keyboardDidHideNotification, object: nil)
+    }
+    
+    // Метод отписки при исчезновении контроллера с экрана
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
     }
     
     
