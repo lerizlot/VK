@@ -64,18 +64,50 @@
 		573B6AB72819B0C6007F149C /* VK */ = {
 			isa = PBXGroup;
 			children = (
+				57CCAB9528223553000DA12A /* Configuration */,
 				573B6ABC2819B0C6007F149C /* LoginViewController.swift */,
 				573B6AC32819B0C8007F149C /* LaunchScreen.storyboard */,
 				573B6ABE2819B0C6007F149C /* Main.storyboard */,
-				57CCAB9528223553000DA12A /* Configuration */,
+				57AFE5982826B180002D887D /* MyGroups */,
+				57AFE59A2826B1C5002D887D /* GroupsSearch */,
+				57AFE5992826B1B1002D887D /* MyFriends */,
+				57AFE59B2826B1D5002D887D /* FriendsPhotos */,
 				573B6AC12819B0C8007F149C /* Assets.xcassets */,
 				573B6AC62819B0C8007F149C /* Info.plist */,
-				57AFE5902826AB79002D887D /* MyGroupsTableViewController.swift */,
-				57AFE5922826AB94002D887D /* MyFriendsTableViewController.swift */,
-				57AFE5942826ABAD002D887D /* GroupsSearchTableViewController.swift */,
-				57AFE5962826AC51002D887D /* FriendsPhotosCollectionViewController.swift */,
 			);
 			path = VK;
+			sourceTree = "<group>";
+		};
+		57AFE5982826B180002D887D /* MyGroups */ = {
+			isa = PBXGroup;
+			children = (
+				57AFE5902826AB79002D887D /* MyGroupsTableViewController.swift */,
+			);
+			path = MyGroups;
+			sourceTree = "<group>";
+		};
+		57AFE5992826B1B1002D887D /* MyFriends */ = {
+			isa = PBXGroup;
+			children = (
+				57AFE5922826AB94002D887D /* MyFriendsTableViewController.swift */,
+			);
+			path = MyFriends;
+			sourceTree = "<group>";
+		};
+		57AFE59A2826B1C5002D887D /* GroupsSearch */ = {
+			isa = PBXGroup;
+			children = (
+				57AFE5942826ABAD002D887D /* GroupsSearchTableViewController.swift */,
+			);
+			path = GroupsSearch;
+			sourceTree = "<group>";
+		};
+		57AFE59B2826B1D5002D887D /* FriendsPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				57AFE5962826AC51002D887D /* FriendsPhotosCollectionViewController.swift */,
+			);
+			path = FriendsPhotos;
 			sourceTree = "<group>";
 		};
 		57CCAB9528223553000DA12A /* Configuration */ = {

@@ -138,11 +138,11 @@
             </objects>
             <point key="canvasLocation" x="-93" y="29"/>
         </scene>
-        <!--Item-->
+        <!--Groups-->
         <scene sceneID="P7x-YI-Md4">
             <objects>
                 <navigationController id="jfQ-cI-1D4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="qJv-yJ-WAH"/>
+                    <tabBarItem key="tabBarItem" title="Groups" image="person.3" catalog="system" selectedImage="person.3.fill" id="qJv-yJ-WAH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xlw-Qd-anl">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -226,11 +226,11 @@
             </objects>
             <point key="canvasLocation" x="3122" y="372"/>
         </scene>
-        <!--Item-->
+        <!--Friends-->
         <scene sceneID="Dkc-BV-VOO">
             <objects>
                 <navigationController id="oqF-b5-eNG" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="zUl-3y-D3r"/>
+                    <tabBarItem key="tabBarItem" title="Friends" image="person" catalog="system" selectedImage="person.fill" id="zUl-3y-D3r"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jpu-e6-DfW">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -345,6 +345,10 @@
         <image name="VKlogo" width="1024" height="1024"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.3" catalog="system" width="128" height="62"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
