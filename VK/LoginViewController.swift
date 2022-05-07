@@ -38,6 +38,8 @@ class LoginViewController: UIViewController {
     @IBAction func signUpButton(_ sender: Any) {
     }
     
+    @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {}
+    
     // Получаем прокрутку
     // Когда клавиатура появляется
     @objc func keyboardWasShown(notification: Notification) {

@@ -171,9 +171,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="428" height="43.666667938232422"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="COD-gC-pEi" kind="presentation" modalPresentationStyle="fullScreen" id="irj-Y9-Pvl"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -181,7 +178,13 @@
                             <outlet property="delegate" destination="p9T-FJ-0D2" id="9lb-Y1-3w9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="IHV-Zg-HIg"/>
+                    <navigationItem key="navigationItem" id="IHV-Zg-HIg">
+                        <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="bCK-Qe-QCV">
+                            <connections>
+                                <segue destination="COD-gC-pEi" kind="show" id="reK-RU-85r"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I8r-oE-fBc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,20 +213,31 @@
                             <outlet property="delegate" destination="COD-gC-pEi" id="omR-vN-svl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="aIb-Rd-ukm"/>
+                    <navigationItem key="navigationItem" id="aIb-Rd-ukm">
+                        <barButtonItem key="rightBarButtonItem" image="lock.fill" catalog="system" id="brl-Pb-aGk">
+                            <connections>
+                                <segue destination="jvy-dW-t04" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="qeQ-4D-Zce"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GPN-KE-0Dk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="jvy-dW-t04" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3122" y="372"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Item-->
         <scene sceneID="Dkc-BV-VOO">
             <objects>
                 <navigationController id="oqF-b5-eNG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="zUl-3y-D3r"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jpu-e6-DfW">
                         <rect key="frame" x="0.0" y="44" width="428" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <connections>
+                        <segue destination="Va0-RQ-GIV" kind="relationship" relationship="rootViewController" id="DzB-L4-wUb"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1H3-Ej-7DQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -246,7 +260,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="IdE-aL-GjP" kind="presentation" modalPresentationStyle="fullScreen" id="EHo-dP-uLC"/>
+                                    <segue destination="IdE-aL-GjP" kind="show" id="EHo-dP-uLC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -255,6 +269,7 @@
                             <outlet property="delegate" destination="Va0-RQ-GIV" id="OGN-TN-HAa"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="ad6-Lx-85m"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VSY-gL-OOj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -270,13 +285,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="E94-cm-mnU">
                             <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="50"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="01s-rS-Pl3">
-                                <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                <rect key="frame" x="0.0" y="50" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hoD-FS-HlN">
                                     <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
@@ -284,14 +299,25 @@
                                 </collectionViewCellContentView>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="2HX-m7-FEk">
+                            <rect key="frame" x="0.0" y="0.0" width="428" height="50"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="IdE-aL-GjP" id="Oda-Di-M8c"/>
                             <outlet property="delegate" destination="IdE-aL-GjP" id="yQv-SN-FJs"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="YXP-MA-83O"/>
+                    <navigationItem key="navigationItem" id="YXP-MA-83O">
+                        <barButtonItem key="rightBarButtonItem" image="lock.fill" catalog="system" id="DL5-q4-aUB">
+                            <connections>
+                                <segue destination="hoe-JE-24V" kind="unwind" unwindAction="myUnwindActionWithUnwindSegue:" id="mQ3-NS-MT8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H5N-Zh-Tzx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hoe-JE-24V" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3122" y="-356"/>
         </scene>
@@ -307,6 +333,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="jfQ-cI-1D4" kind="relationship" relationship="viewControllers" id="3nb-bV-8EZ"/>
+                        <segue destination="oqF-b5-eNG" kind="relationship" relationship="viewControllers" id="7oL-Pp-zeY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MmQ-fV-DvS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -316,6 +343,8 @@
     </scenes>
     <resources>
         <image name="VKlogo" width="1024" height="1024"/>
+        <image name="lock.fill" catalog="system" width="128" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
