@@ -56,7 +56,6 @@
 		573B6AB72819B0C6007F149C /* VK */ = {
 			isa = PBXGroup;
 			children = (
-				57CCAB9428223545000DA12A /* Resourses */,
 				573B6ABC2819B0C6007F149C /* LoginViewController.swift */,
 				573B6AC32819B0C8007F149C /* LaunchScreen.storyboard */,
 				573B6ABE2819B0C6007F149C /* Main.storyboard */,
@@ -65,13 +64,6 @@
 				573B6AC62819B0C8007F149C /* Info.plist */,
 			);
 			path = VK;
-			sourceTree = "<group>";
-		};
-		57CCAB9428223545000DA12A /* Resourses */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resourses;
 			sourceTree = "<group>";
 		};
 		57CCAB9528223553000DA12A /* Configuration */ = {
