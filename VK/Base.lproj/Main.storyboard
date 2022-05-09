@@ -62,7 +62,7 @@
                                         </buttonConfiguration>
                                         <connections>
                                             <action selector="logInButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xwl-pP-wic"/>
-                                            <segue destination="OBN-9b-nP3" kind="presentation" modalPresentationStyle="fullScreen" id="fea-2H-r3r"/>
+                                            <segue destination="OBN-9b-nP3" kind="presentation" identifier="logInSegue" modalPresentationStyle="fullScreen" id="fea-2H-r3r"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email or phone number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SN7-p5-WBb">
@@ -208,7 +208,7 @@
                     <navigationItem key="navigationItem" id="IHV-Zg-HIg">
                         <barButtonItem key="rightBarButtonItem" image="magnifyingglass" catalog="system" id="bCK-Qe-QCV">
                             <connections>
-                                <segue destination="COD-gC-pEi" kind="show" id="reK-RU-85r"/>
+                                <segue destination="COD-gC-pEi" kind="show" identifier="searchGroup" id="reK-RU-85r"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -331,7 +331,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="IdE-aL-GjP" kind="show" id="EHo-dP-uLC"/>
+                                    <segue destination="IdE-aL-GjP" kind="show" identifier="showPhoto" id="EHo-dP-uLC"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -361,7 +361,7 @@
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="01s-rS-Pl3">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="01s-rS-Pl3">
                                 <rect key="frame" x="0.0" y="50" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hoD-FS-HlN">

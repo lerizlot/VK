@@ -64,14 +64,14 @@
 		573B6AB72819B0C6007F149C /* VK */ = {
 			isa = PBXGroup;
 			children = (
-				57CCAB9528223553000DA12A /* Configuration */,
 				573B6ABC2819B0C6007F149C /* LoginViewController.swift */,
-				573B6AC32819B0C8007F149C /* LaunchScreen.storyboard */,
 				573B6ABE2819B0C6007F149C /* Main.storyboard */,
-				57AFE5982826B180002D887D /* MyGroups */,
-				57AFE59A2826B1C5002D887D /* GroupsSearch */,
 				57AFE5992826B1B1002D887D /* MyFriends */,
 				57AFE59B2826B1D5002D887D /* FriendsPhotos */,
+				57AFE5982826B180002D887D /* MyGroups */,
+				57AFE59A2826B1C5002D887D /* GroupsSearch */,
+				57CCAB9528223553000DA12A /* Configuration */,
+				573B6AC32819B0C8007F149C /* LaunchScreen.storyboard */,
 				573B6AC12819B0C8007F149C /* Assets.xcassets */,
 				573B6AC62819B0C8007F149C /* Info.plist */,
 			);
