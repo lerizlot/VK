@@ -13,10 +13,14 @@
 		573B6AC02819B0C6007F149C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573B6ABE2819B0C6007F149C /* Main.storyboard */; };
 		573B6AC22819B0C8007F149C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 573B6AC12819B0C8007F149C /* Assets.xcassets */; };
 		573B6AC52819B0C8007F149C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 573B6AC32819B0C8007F149C /* LaunchScreen.storyboard */; };
-		57AFE5912826AB79002D887D /* MyGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE5902826AB79002D887D /* MyGroupsTableViewController.swift */; };
-		57AFE5932826AB94002D887D /* MyFriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE5922826AB94002D887D /* MyFriendsTableViewController.swift */; };
-		57AFE5952826ABAD002D887D /* GroupsSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE5942826ABAD002D887D /* GroupsSearchTableViewController.swift */; };
-		57AFE5972826AC51002D887D /* FriendsPhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE5962826AC51002D887D /* FriendsPhotosCollectionViewController.swift */; };
+		57561E44282D476C00AB164D /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57561E43282D476C00AB164D /* FriendCell.swift */; };
+		57561E46282D47FD00AB164D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57561E45282D47FD00AB164D /* PhotoCell.swift */; };
+		57561E48282D4B2200AB164D /* PhotoCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57561E47282D4B2200AB164D /* PhotoCollectionController.swift */; };
+		57561E4A282D4B3F00AB164D /* GroupSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57561E49282D4B3F00AB164D /* GroupSearchController.swift */; };
+		57AFE5912826AB79002D887D /* MyGroupsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE5902826AB79002D887D /* MyGroupsTableView.swift */; };
+		57AFE5932826AB94002D887D /* MyFriendsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE5922826AB94002D887D /* MyFriendsTableView.swift */; };
+		57D0A54D282C2AA5007B7C41 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D0A54C282C2AA5007B7C41 /* GroupCell.swift */; };
+		57D0A54F282C2FB1007B7C41 /* Groups.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D0A54E282C2FB1007B7C41 /* Groups.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +32,14 @@
 		573B6AC12819B0C8007F149C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		573B6AC42819B0C8007F149C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		573B6AC62819B0C8007F149C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		57AFE5902826AB79002D887D /* MyGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableViewController.swift; sourceTree = "<group>"; };
-		57AFE5922826AB94002D887D /* MyFriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsTableViewController.swift; sourceTree = "<group>"; };
-		57AFE5942826ABAD002D887D /* GroupsSearchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsSearchTableViewController.swift; sourceTree = "<group>"; };
-		57AFE5962826AC51002D887D /* FriendsPhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		57561E43282D476C00AB164D /* FriendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		57561E45282D47FD00AB164D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		57561E47282D4B2200AB164D /* PhotoCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionController.swift; sourceTree = "<group>"; };
+		57561E49282D4B3F00AB164D /* GroupSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSearchController.swift; sourceTree = "<group>"; };
+		57AFE5902826AB79002D887D /* MyGroupsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableView.swift; sourceTree = "<group>"; };
+		57AFE5922826AB94002D887D /* MyFriendsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsTableView.swift; sourceTree = "<group>"; };
+		57D0A54C282C2AA5007B7C41 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
+		57D0A54E282C2FB1007B7C41 /* Groups.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Groups.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 				57AFE59B2826B1D5002D887D /* FriendsPhotos */,
 				57AFE5982826B180002D887D /* MyGroups */,
 				57AFE59A2826B1C5002D887D /* GroupsSearch */,
+				57D0A54E282C2FB1007B7C41 /* Groups.swift */,
 				57CCAB9528223553000DA12A /* Configuration */,
 				573B6AC32819B0C8007F149C /* LaunchScreen.storyboard */,
 				573B6AC12819B0C8007F149C /* Assets.xcassets */,
@@ -81,7 +90,8 @@
 		57AFE5982826B180002D887D /* MyGroups */ = {
 			isa = PBXGroup;
 			children = (
-				57AFE5902826AB79002D887D /* MyGroupsTableViewController.swift */,
+				57AFE5902826AB79002D887D /* MyGroupsTableView.swift */,
+				57D0A54C282C2AA5007B7C41 /* GroupCell.swift */,
 			);
 			path = MyGroups;
 			sourceTree = "<group>";
@@ -89,7 +99,8 @@
 		57AFE5992826B1B1002D887D /* MyFriends */ = {
 			isa = PBXGroup;
 			children = (
-				57AFE5922826AB94002D887D /* MyFriendsTableViewController.swift */,
+				57AFE5922826AB94002D887D /* MyFriendsTableView.swift */,
+				57561E43282D476C00AB164D /* FriendCell.swift */,
 			);
 			path = MyFriends;
 			sourceTree = "<group>";
@@ -97,7 +108,7 @@
 		57AFE59A2826B1C5002D887D /* GroupsSearch */ = {
 			isa = PBXGroup;
 			children = (
-				57AFE5942826ABAD002D887D /* GroupsSearchTableViewController.swift */,
+				57561E49282D4B3F00AB164D /* GroupSearchController.swift */,
 			);
 			path = GroupsSearch;
 			sourceTree = "<group>";
@@ -105,7 +116,8 @@
 		57AFE59B2826B1D5002D887D /* FriendsPhotos */ = {
 			isa = PBXGroup;
 			children = (
-				57AFE5962826AC51002D887D /* FriendsPhotosCollectionViewController.swift */,
+				57561E47282D4B2200AB164D /* PhotoCollectionController.swift */,
+				57561E45282D47FD00AB164D /* PhotoCell.swift */,
 			);
 			path = FriendsPhotos;
 			sourceTree = "<group>";
@@ -190,13 +202,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57AFE5932826AB94002D887D /* MyFriendsTableViewController.swift in Sources */,
+				57AFE5932826AB94002D887D /* MyFriendsTableView.swift in Sources */,
 				573B6ABD2819B0C6007F149C /* LoginViewController.swift in Sources */,
+				57561E4A282D4B3F00AB164D /* GroupSearchController.swift in Sources */,
 				573B6AB92819B0C6007F149C /* AppDelegate.swift in Sources */,
 				573B6ABB2819B0C6007F149C /* SceneDelegate.swift in Sources */,
-				57AFE5972826AC51002D887D /* FriendsPhotosCollectionViewController.swift in Sources */,
-				57AFE5912826AB79002D887D /* MyGroupsTableViewController.swift in Sources */,
-				57AFE5952826ABAD002D887D /* GroupsSearchTableViewController.swift in Sources */,
+				57AFE5912826AB79002D887D /* MyGroupsTableView.swift in Sources */,
+				57D0A54D282C2AA5007B7C41 /* GroupCell.swift in Sources */,
+				57D0A54F282C2FB1007B7C41 /* Groups.swift in Sources */,
+				57561E46282D47FD00AB164D /* PhotoCell.swift in Sources */,
+				57561E44282D476C00AB164D /* FriendCell.swift in Sources */,
+				57561E48282D4B2200AB164D /* PhotoCollectionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

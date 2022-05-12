@@ -87,3 +87,10 @@ class GroupsSearchTableViewController: UITableViewController {
     */
 
 }
+
+extension GroupsSearchTableViewController: UITableViewDataSource {
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        <#code#>
+    }
+}

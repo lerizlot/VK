@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyGroupsTableViewController: UITableViewController {
+class MyGroupsTableView: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +33,19 @@ class MyGroupsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "myGroupCell", for: indexPath)
-
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell",
+                                                       for: indexPath) as? GroupCell else {
+            preconditionFailure("Error")
+            
+           // cell.groupName = groups[indexPath.row]
+           // cell.groupImage = groups[indexPath.row]
+        }
+        
+        print(indexPath.section)
+        print(indexPath.row)
+        
         // Configure the cell...
-
+        
         return cell
     }
     

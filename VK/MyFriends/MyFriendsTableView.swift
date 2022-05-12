@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MyFriendsTableViewController: UITableViewController {
+class MyFriendsTableView: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +33,7 @@ class MyFriendsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "friendCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
 
         // Configure the cell...
 
