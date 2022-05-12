@@ -131,7 +131,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="SN7-p5-WBb" id="neO-pF-Llg"/>
                         <outlet property="logoImage" destination="mO1-nu-0A3" id="QX5-uF-UBd"/>
-                        <outlet property="orLabel" destination="A7u-eS-WMk" id="zV7-qK-ENZ"/>
+                        <outlet property="orLabel" destination="KvZ-Yo-9hQ" id="jV5-xd-Nhc"/>
                         <outlet property="passwordTextField" destination="QSf-O7-V59" id="IKt-fH-zH7"/>
                         <outlet property="scrollView" destination="p7e-hh-hBB" id="n3C-q7-cyX"/>
                         <outlet property="signInLabel" destination="dUy-Ii-fMD" id="fCU-fV-MNd"/>

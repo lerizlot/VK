@@ -31,7 +31,7 @@ class LoginViewController: UIViewController {
         }
     }
     
-    @IBOutlet weak var orLabel: NSLayoutConstraint!
+    @IBOutlet weak var orLabel: UILabel!
     
     @IBAction func appleSignInButton(_ sender: Any) {
     }
