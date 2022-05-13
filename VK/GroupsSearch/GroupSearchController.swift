@@ -10,7 +10,12 @@ import UIKit
 class GroupSearchController: UIViewController {
     
     
-    @IBOutlet weak var groupSearchTableView: UITableView!
+    @IBOutlet weak var groupSearchTableView: UITableView! {
+        didSet {
+            groupSearchTableView.dataSource = self
+            groupSearchTableView.delegate = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,13 +46,19 @@ extension GroupSearchController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
        
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell", for: indexPath) as! GroupCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupSearch", for: indexPath) as! GroupCell
         
        // cell.groupName.text = Groups[indexPath.row]
        // cell.groupImage.image = Groups[indexPath.row]
         
         return cell
     }
+}
+
+extension GroupSearchController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
     
-    
+   
 }

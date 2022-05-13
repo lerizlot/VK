@@ -196,7 +196,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="428" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VKicon" translatesAutoresizingMaskIntoConstraints="NO" id="wkB-Ih-cy2">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wkB-Ih-cy2">
                                             <rect key="frame" x="35" y="15" width="70" height="70"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="wkB-Ih-cy2" secondAttribute="height" multiplier="1:1" id="QOh-0F-u8r"/>
@@ -204,19 +204,20 @@
                                                 <constraint firstAttribute="height" priority="999" constant="70" id="eVb-8o-DiU"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGV-dU-ovy">
-                                            <rect key="frame" x="183" y="33.666666666666664" width="62" height="32.999999999999993"/>
-                                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="25"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGV-dU-ovy">
+                                            <rect key="frame" x="138" y="38" width="48.666666666666657" height="23.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                             <color key="textColor" red="0.33333334329999997" green="0.45490196350000001" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="bGV-dU-ovy" firstAttribute="leading" secondItem="wkB-Ih-cy2" secondAttribute="trailing" constant="33" id="C2d-1v-P6M"/>
                                         <constraint firstItem="wkB-Ih-cy2" firstAttribute="leading" secondItem="b5x-ek-xNu" secondAttribute="leading" constant="35" id="HZC-Ox-Fhg"/>
-                                        <constraint firstItem="bGV-dU-ovy" firstAttribute="centerX" secondItem="b5x-ek-xNu" secondAttribute="centerX" id="NLO-qH-IyS"/>
+                                        <constraint firstItem="bGV-dU-ovy" firstAttribute="top" secondItem="b5x-ek-xNu" secondAttribute="top" constant="38" id="JfD-58-r0Z"/>
                                         <constraint firstAttribute="bottom" secondItem="wkB-Ih-cy2" secondAttribute="bottom" priority="999" constant="15" id="Zbb-M8-OBx"/>
                                         <constraint firstItem="wkB-Ih-cy2" firstAttribute="top" secondItem="b5x-ek-xNu" secondAttribute="top" constant="15" id="g9d-QD-Vp8"/>
-                                        <constraint firstItem="bGV-dU-ovy" firstAttribute="centerY" secondItem="b5x-ek-xNu" secondAttribute="centerY" id="uRB-80-deG"/>
+                                        <constraint firstAttribute="bottom" secondItem="bGV-dU-ovy" secondAttribute="bottom" constant="38.666666666666671" id="t80-14-DMl"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -261,27 +262,27 @@
                                             <rect key="frame" x="0.0" y="0.0" width="428" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VKicon" translatesAutoresizingMaskIntoConstraints="NO" id="Lxh-pY-HEQ">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lxh-pY-HEQ">
                                                     <rect key="frame" x="35" y="15" width="70" height="70"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="70" id="MHj-mL-CAQ"/>
-                                                        <constraint firstAttribute="height" constant="70" id="uu2-d9-7iG"/>
-                                                        <constraint firstAttribute="width" secondItem="Lxh-pY-HEQ" secondAttribute="height" multiplier="1:1" id="zRf-AQ-Jc6"/>
+                                                        <constraint firstAttribute="height" priority="999" constant="70" id="uu2-d9-7iG"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkR-Vt-nkb">
-                                                    <rect key="frame" x="183" y="33.666666666666664" width="62" height="32.999999999999993"/>
-                                                    <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="25"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UkR-Vt-nkb">
+                                                    <rect key="frame" x="133" y="36" width="49" height="28"/>
+                                                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                                     <color key="textColor" red="0.33333334329999997" green="0.45490196350000001" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Lxh-pY-HEQ" firstAttribute="top" secondItem="seX-v0-J42" secondAttribute="top" constant="15" id="3AP-IA-mlV"/>
-                                                <constraint firstAttribute="bottom" secondItem="Lxh-pY-HEQ" secondAttribute="bottom" constant="15" id="brB-iN-NC3"/>
-                                                <constraint firstItem="UkR-Vt-nkb" firstAttribute="centerX" secondItem="seX-v0-J42" secondAttribute="centerX" id="n18-wf-gKc"/>
+                                                <constraint firstItem="Lxh-pY-HEQ" firstAttribute="top" secondItem="seX-v0-J42" secondAttribute="top" priority="999" constant="15" id="3AP-IA-mlV"/>
+                                                <constraint firstAttribute="bottom" secondItem="Lxh-pY-HEQ" secondAttribute="bottom" priority="999" constant="15" id="brB-iN-NC3"/>
+                                                <constraint firstItem="UkR-Vt-nkb" firstAttribute="leading" secondItem="Lxh-pY-HEQ" secondAttribute="trailing" constant="28" id="cdE-Gb-Gbz"/>
+                                                <constraint firstItem="UkR-Vt-nkb" firstAttribute="top" secondItem="seX-v0-J42" secondAttribute="top" constant="36" id="lJl-4w-0ip"/>
                                                 <constraint firstItem="Lxh-pY-HEQ" firstAttribute="leading" secondItem="seX-v0-J42" secondAttribute="leading" constant="35" id="nbf-5F-c8J"/>
-                                                <constraint firstItem="UkR-Vt-nkb" firstAttribute="centerY" secondItem="seX-v0-J42" secondAttribute="centerY" id="wJn-cX-NB3"/>
+                                                <constraint firstAttribute="bottom" secondItem="UkR-Vt-nkb" secondAttribute="bottom" constant="36" id="yma-vb-dlL"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -354,7 +355,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="399.33333333333331" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VKicon" translatesAutoresizingMaskIntoConstraints="NO" id="vis-tG-lXY">
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vis-tG-lXY">
                                             <rect key="frame" x="35" y="15" width="70" height="70"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="70" id="1K9-n8-uRs"/>
@@ -362,17 +363,18 @@
                                                 <constraint firstAttribute="width" secondItem="vis-tG-lXY" secondAttribute="height" multiplier="1:1" id="qfq-qc-914"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPP-p8-OjZ">
-                                            <rect key="frame" x="168.66666666666666" y="33.666666666666664" width="62" height="32.999999999999993"/>
-                                            <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="25"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPP-p8-OjZ">
+                                            <rect key="frame" x="128" y="38" width="44" height="23.333333333333336"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                             <color key="textColor" red="0.33333334329999997" green="0.45490196350000001" blue="0.62352943419999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="vis-tG-lXY" secondAttribute="bottom" priority="999" constant="15" id="6LX-Lu-8L2"/>
-                                        <constraint firstItem="jPP-p8-OjZ" firstAttribute="centerY" secondItem="c3N-8Z-erb" secondAttribute="centerY" id="JrE-rf-mFa"/>
-                                        <constraint firstItem="jPP-p8-OjZ" firstAttribute="centerX" secondItem="c3N-8Z-erb" secondAttribute="centerX" id="dHe-nE-c16"/>
+                                        <constraint firstItem="jPP-p8-OjZ" firstAttribute="leading" secondItem="vis-tG-lXY" secondAttribute="trailing" constant="23" id="JQX-GB-9LK"/>
+                                        <constraint firstAttribute="bottom" secondItem="jPP-p8-OjZ" secondAttribute="bottom" constant="38.333333333333329" id="ZBR-WA-SKR"/>
+                                        <constraint firstItem="jPP-p8-OjZ" firstAttribute="top" secondItem="c3N-8Z-erb" secondAttribute="top" constant="38.333333333333329" id="k9w-wJ-7WS"/>
                                         <constraint firstItem="vis-tG-lXY" firstAttribute="leading" secondItem="c3N-8Z-erb" secondAttribute="leading" constant="35" id="kuX-JE-1NT"/>
                                         <constraint firstItem="vis-tG-lXY" firstAttribute="top" secondItem="c3N-8Z-erb" secondAttribute="top" constant="15" id="noS-kk-var"/>
                                     </constraints>
@@ -413,19 +415,18 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="photoCell" id="oTR-Lq-wN9" customClass="PhotoCell" customModule="VK" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCell" id="oTR-Lq-wN9" customClass="PhotoCell" customModule="VK" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="r75-w7-q7j">
                                             <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VKicon" translatesAutoresizingMaskIntoConstraints="NO" id="nu9-3V-56D">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nu9-3V-56D">
                                                     <rect key="frame" x="15" y="8" width="120" height="120"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="120" id="83z-5K-6eN"/>
                                                         <constraint firstAttribute="height" constant="120" id="I67-5R-jXU"/>
-                                                        <constraint firstAttribute="width" secondItem="nu9-3V-56D" secondAttribute="height" multiplier="1:1" id="Yds-fT-prK"/>
                                                     </constraints>
                                                 </imageView>
                                             </subviews>
@@ -473,7 +474,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="VKicon" width="192" height="192"/>
         <image name="VKlogo" width="1024" height="1024"/>
         <image name="lock.fill" catalog="system" width="128" height="128"/>
         <image name="person" catalog="system" width="128" height="117"/>

@@ -8,6 +8,18 @@
 import UIKit
 
 class MyGroupsTableView: UITableViewController {
+    
+    let groups = [
+        Groups(groupImage: UIImage(named:"nationalGeographic"), groupName: "National Geografic"),
+        Groups(groupImage: UIImage(named:"discoveryScience"), groupName: "Discovery Science"),
+        Groups(groupImage: UIImage(named:"animalPlanet"), groupName: "Animal Planet"),
+        Groups(groupImage: UIImage(named:"discoveryKnowledge"), groupName: "Discovery Knowledge"),
+        Groups(groupImage: UIImage(named:"militaryHistory"), groupName: "Military History"),
+        Groups(groupImage: UIImage(named:"natGeoWild"), groupName: "Nat Geo Wild"),
+        Groups(groupImage: UIImage(named:"science"), groupName: "Science"),
+        Groups(groupImage: UIImage(named:"investigationDiscovery"), groupName: "Investigation Discovery"),
+        
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,24 +40,21 @@ class MyGroupsTableView: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return groups.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell",
                                                        for: indexPath) as? GroupCell else {
-            preconditionFailure("Error")
             
-           // cell.groupName = groups[indexPath.row]
-           // cell.groupImage = groups[indexPath.row]
+            preconditionFailure("Error")
         }
         
-        print(indexPath.section)
-        print(indexPath.row)
+        cell.groupImage.image = groups[indexPath.row].image
+        cell.groupName.text = groups[indexPath.row].name
         
         // Configure the cell...
-        
         return cell
     }
     

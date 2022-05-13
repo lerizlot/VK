@@ -8,6 +8,20 @@
 import UIKit
 
 class MyFriendsTableView: UITableViewController {
+    
+    let friends = [
+        Friends(friendImage: UIImage(named:"ulan"), friendName: "Улан Бейшенкулов"),
+        Friends(friendImage: UIImage(named:"yuriy"), friendName: "Юрий Зарубин"),
+        Friends(friendImage: UIImage(named:"lessy"), friendName: "Олеся Мазур"),
+        Friends(friendImage: UIImage(named:"andrey"), friendName: "Андрей Поздняков"),
+        Friends(friendImage: UIImage(named:"leshka"), friendName: "Лёшка Сидоренко"),
+        Friends(friendImage: UIImage(named:"yaroslav"), friendName: "Ярослав Самборский"),
+        Friends(friendImage: UIImage(named:"eugen"), friendName: "Евгений Эдвардсон"),
+        Friends(friendImage: UIImage(named:"roman"), friendName: "Роман"),
+        Friends(friendImage: UIImage(named:"alexander"), friendName: "Александр Деревенских"),
+        Friends(friendImage: UIImage(named:"natalia"), friendName: "Наталья Сафонова"),
+
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,12 +42,18 @@ class MyFriendsTableView: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return friends.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as? FriendCell else {
+            
+            preconditionFailure("Error")
+        }
+        
+        cell.friendImage.image = friends[indexPath.row].image
+        cell.friendName.text = friends[indexPath.row].name
 
         // Configure the cell...
 
