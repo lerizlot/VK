@@ -96,14 +96,23 @@ class MyFriendsTableView: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    /* проверяем идентификатор и вью контроллер на который хотим перейти
+     если все верно, проверяем по какой строке произошло нажатие
+     на следующий экран передается соответствующая информация: имя друга и его фотографии
+     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPhoto",
+        let destinationVC = segue.destination as? PhotoCollectionController,
+        let indexPath = tableView.indexPathForSelectedRow {
+            let friendName = friends[indexPath.row].name
+            destinationVC.title = friendName
+        }
+        
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

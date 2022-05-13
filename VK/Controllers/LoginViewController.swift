@@ -25,7 +25,7 @@ class LoginViewController: UIViewController {
         
         // Проверяем, верны ли они
         if login == "" && password == "" {
-            print("Authorization successfull")
+            print("Authorization successfull. Welcome!")
         } else {
             print("Error")
         }
