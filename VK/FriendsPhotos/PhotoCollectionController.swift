@@ -9,6 +9,8 @@ import UIKit
 
 class PhotoCollectionController: UIViewController {
     
+   // @IBOutlet weak var likeControl: LikeControl!
+    
     @IBOutlet weak var photoCollectionView: UICollectionView! {
         didSet {
             photoCollectionView.dataSource = self
@@ -20,6 +22,14 @@ class PhotoCollectionController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // принудительная перерисовка
+       // likeControl.setNeedsLayout()
+       // likeControl.transform = CGAffineTransform(rotationAngle: CGFloat.pi/4)
     }
     
     
