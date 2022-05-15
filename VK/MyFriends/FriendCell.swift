@@ -8,6 +8,8 @@
 import UIKit
 
 class FriendCell: UITableViewCell {
+    
+    static let reuseIdentifier = "FriendCell"
 
     @IBOutlet weak var friendImage: UIImageView!
     @IBOutlet weak var friendName: UILabel!
@@ -15,6 +17,12 @@ class FriendCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        friendImage.layer.cornerRadius = friendImage.frame.size.width / 2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

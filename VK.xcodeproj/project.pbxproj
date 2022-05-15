@@ -19,6 +19,7 @@
 		57561E46282D47FD00AB164D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57561E45282D47FD00AB164D /* PhotoCell.swift */; };
 		57561E48282D4B2200AB164D /* PhotoCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57561E47282D4B2200AB164D /* PhotoCollectionController.swift */; };
 		57561E4A282D4B3F00AB164D /* GroupSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57561E49282D4B3F00AB164D /* GroupSearchController.swift */; };
+		576D14FA28302BF9004C36AC /* AlphabetControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576D14F928302BF9004C36AC /* AlphabetControl.swift */; };
 		577CC0B1282E7AD6004F3AE8 /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577CC0B0282E7AD6004F3AE8 /* Friends.swift */; };
 		57AFE5912826AB79002D887D /* MyGroupsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE5902826AB79002D887D /* MyGroupsTableView.swift */; };
 		57AFE5932826AB94002D887D /* MyFriendsTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AFE5922826AB94002D887D /* MyFriendsTableView.swift */; };
@@ -41,6 +42,7 @@
 		57561E45282D47FD00AB164D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		57561E47282D4B2200AB164D /* PhotoCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionController.swift; sourceTree = "<group>"; };
 		57561E49282D4B3F00AB164D /* GroupSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupSearchController.swift; sourceTree = "<group>"; };
+		576D14F928302BF9004C36AC /* AlphabetControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlphabetControl.swift; sourceTree = "<group>"; };
 		577CC0B0282E7AD6004F3AE8 /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
 		57AFE5902826AB79002D887D /* MyGroupsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsTableView.swift; sourceTree = "<group>"; };
 		57AFE5922826AB94002D887D /* MyFriendsTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsTableView.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				574A0582282ED508007BFACE /* BackgroundView.swift */,
 				574A0584282F9D09007BFACE /* LikeControl.swift */,
+				576D14F928302BF9004C36AC /* AlphabetControl.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				573B6ABD2819B0C6007F149C /* LoginViewController.swift in Sources */,
 				57561E4A282D4B3F00AB164D /* GroupSearchController.swift in Sources */,
 				573B6AB92819B0C6007F149C /* AppDelegate.swift in Sources */,
+				576D14FA28302BF9004C36AC /* AlphabetControl.swift in Sources */,
 				573B6ABB2819B0C6007F149C /* SceneDelegate.swift in Sources */,
 				57AFE5912826AB79002D887D /* MyGroupsTableView.swift in Sources */,
 				57D0A54D282C2AA5007B7C41 /* GroupCell.swift in Sources */,

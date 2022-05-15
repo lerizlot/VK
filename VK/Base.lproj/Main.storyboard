@@ -379,12 +379,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="399.33333333333331" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
+                                        <view contentMode="scaleToFill" id="bj9-Ye-McS" customClass="AlphabetControl" customModule="VK" customModuleProvider="target">
+                                            <rect key="frame" x="409" y="102" width="20" height="460"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        </view>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evJ-gZ-hxC" customClass="BackgroundView" customModule="VK" customModuleProvider="target">
-                                            <rect key="frame" x="20" y="0.0" width="100" height="100"/>
+                                            <rect key="frame" x="28" y="7" width="85" height="85"/>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="acj-T3-Zxe"/>
-                                                <constraint firstAttribute="height" priority="999" constant="100" id="or6-a8-u9E"/>
+                                                <constraint firstAttribute="width" constant="85" id="Vv3-Hy-UTF"/>
+                                                <constraint firstAttribute="height" priority="999" constant="85" id="jI7-Ti-EMk"/>
                                             </constraints>
                                         </view>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vis-tG-lXY">
@@ -404,15 +409,15 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="bottom" secondItem="vis-tG-lXY" secondAttribute="bottom" priority="999" constant="15" id="6LX-Lu-8L2"/>
-                                        <constraint firstItem="evJ-gZ-hxC" firstAttribute="leading" secondItem="c3N-8Z-erb" secondAttribute="leading" constant="20" symbolic="YES" id="AXE-eW-yDZ"/>
                                         <constraint firstItem="jPP-p8-OjZ" firstAttribute="leading" secondItem="vis-tG-lXY" secondAttribute="trailing" constant="23" id="JQX-GB-9LK"/>
-                                        <constraint firstAttribute="bottom" secondItem="evJ-gZ-hxC" secondAttribute="bottom" id="JyL-H9-Pf8"/>
+                                        <constraint firstItem="evJ-gZ-hxC" firstAttribute="leading" secondItem="c3N-8Z-erb" secondAttribute="leading" constant="28" id="TzK-Of-dRM"/>
+                                        <constraint firstAttribute="bottom" secondItem="evJ-gZ-hxC" secondAttribute="bottom" constant="8" id="VA3-4C-Sce"/>
                                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jPP-p8-OjZ" secondAttribute="trailing" constant="20" symbolic="YES" id="YGl-xa-aYd"/>
                                         <constraint firstAttribute="bottom" secondItem="jPP-p8-OjZ" secondAttribute="bottom" constant="38.333333333333329" id="ZBR-WA-SKR"/>
+                                        <constraint firstItem="evJ-gZ-hxC" firstAttribute="top" secondItem="c3N-8Z-erb" secondAttribute="top" constant="7" id="hcP-9M-eGf"/>
                                         <constraint firstItem="jPP-p8-OjZ" firstAttribute="top" secondItem="c3N-8Z-erb" secondAttribute="top" constant="38.333333333333329" id="k9w-wJ-7WS"/>
                                         <constraint firstItem="vis-tG-lXY" firstAttribute="leading" secondItem="c3N-8Z-erb" secondAttribute="leading" constant="35" id="kuX-JE-1NT"/>
                                         <constraint firstItem="vis-tG-lXY" firstAttribute="top" secondItem="c3N-8Z-erb" secondAttribute="top" constant="15" id="noS-kk-var"/>
-                                        <constraint firstItem="evJ-gZ-hxC" firstAttribute="top" secondItem="c3N-8Z-erb" secondAttribute="top" id="o1F-Xu-HEy"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

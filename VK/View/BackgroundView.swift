@@ -8,18 +8,27 @@
 import UIKit
 
 class BackgroundView: UIView {
-    
-//    layer.shadowColor = UIColor.black.cgColor
-//    layer.shadowOffset = .zero
-//    layer.shadowRadius = 5
-//    layer.shadowOpacity = 1
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    var shadowRadius: CGFloat = 20
+    var shadowOpacity: Float = 1
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        setBackgroundView()
     }
-    */
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        layer.cornerRadius = frame.size.width/2
+    }
+    
+    func setBackgroundView() {
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOffset = .zero
+        layer.shadowRadius = shadowRadius
+        layer.shadowOpacity = shadowOpacity
+    }
 
 }
