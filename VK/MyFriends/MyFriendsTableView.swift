@@ -8,12 +8,26 @@
 import UIKit
 
 class MyFriendsTableView: UITableViewController {
+    
+    let friends = [
+        Friends(friendImage: UIImage(named:"ulan"), friendName: "Улан Бейшенкулов"),
+        Friends(friendImage: UIImage(named:"yuriy"), friendName: "Юрий Зарубин"),
+        Friends(friendImage: UIImage(named:"lessy"), friendName: "Олеся Мазур"),
+        Friends(friendImage: UIImage(named:"andrey"), friendName: "Андрей Поздняков"),
+        Friends(friendImage: UIImage(named:"leshka"), friendName: "Лёшка Сидоренко"),
+        Friends(friendImage: UIImage(named:"yaroslav"), friendName: "Ярослав Самборский"),
+        Friends(friendImage: UIImage(named:"eugen"), friendName: "Евгений Эдвардсон"),
+        Friends(friendImage: UIImage(named:"roman"), friendName: "Роман"),
+        Friends(friendImage: UIImage(named:"alexander"), friendName: "Александр Деревенских"),
+        Friends(friendImage: UIImage(named:"natalia"), friendName: "Наталья Сафонова"),
+
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
@@ -28,12 +42,18 @@ class MyFriendsTableView: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 10
+        return friends.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "FriendCell", for: indexPath) as? FriendCell else {
+            
+            preconditionFailure("Error")
+        }
+        
+        cell.friendImage.image = friends[indexPath.row].image
+        cell.friendName.text = friends[indexPath.row].name
 
         // Configure the cell...
 
@@ -76,14 +96,23 @@ class MyFriendsTableView: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    /* проверяем идентификатор и вью контроллер на который хотим перейти
+     если все верно, проверяем по какой строке произошло нажатие
+     на следующий экран передается соответствующая информация: имя друга и его фотографии
+     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showPhoto",
+        let destinationVC = segue.destination as? PhotoCollectionController,
+        let indexPath = tableView.indexPathForSelectedRow {
+            let friendName = friends[indexPath.row].name
+            destinationVC.title = friendName
+        }
+        
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }

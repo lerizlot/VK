@@ -9,8 +9,23 @@ import UIKit
 
 class GroupSearchController: UIViewController {
     
+    let groups = [
+        Groups(groupImage: UIImage(named:"discoveryKnowledge"), groupName: "Discovery Knowledge"),
+        Groups(groupImage: UIImage(named:"militaryHistory"), groupName: "Military History"),
+        Groups(groupImage: UIImage(named:"natGeoWild"), groupName: "Nat Geo Wild"),
+        Groups(groupImage: UIImage(named:"science"), groupName: "Science"),
+        Groups(groupImage: UIImage(named:"investigationDiscovery"), groupName: "Investigation Discovery"),
+        Groups(groupImage: UIImage(named:"nationalGeographic"), groupName: "National Geografic"),
+        Groups(groupImage: UIImage(named:"discoveryScience"), groupName: "Discovery Science"),
+        Groups(groupImage: UIImage(named:"animalPlanet"), groupName: "Animal Planet"),
+    ]
     
-    @IBOutlet weak var groupSearchTableView: UITableView!
+    @IBOutlet weak var groupSearchTableView: UITableView! {
+        didSet {
+            groupSearchTableView.dataSource = self
+            groupSearchTableView.delegate = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,18 +50,37 @@ extension GroupSearchController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return groups.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       
-        let cell = tableView.dequeueReusableCell(withIdentifier: "GroupCell", for: indexPath) as! GroupCell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "GroupSearch", for: indexPath) as? GroupCell else {
+            
+            
+            preconditionFailure("Error")
+        }
         
-       // cell.groupName.text = Groups[indexPath.row]
-       // cell.groupImage.image = Groups[indexPath.row]
+        cell.groupImage.image = groups[indexPath.row].image
+        cell.groupName.text = groups[indexPath.row].name
         
+        // Configure the cell...
         return cell
+    }
+//
+//        var content = cell.defaultContentConfiguration()
+//        content.image = groups[indexPath.row].image
+//        content.text = groups[indexPath.row].name
+//
+//        cell.contentConfiguration = content
+//
+}
+
+extension GroupSearchController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
     
     
